@@ -10,11 +10,7 @@ sys.setdefaultencoding('utf8')
 app = Flask(__name__)
 
 # Configuration
-app.config.from_object('config')
-
-# db instance
-# from app.maintenance import models
-# db = SQLAlchemy(app)
+# app.config.from_object('config')
 
 # registre routes
 from app.maintenance.routes import routes

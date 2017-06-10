@@ -28,10 +28,10 @@ class PurchaseOrdersModelView(ModelView):
 
 
 # Administration Site
-admin = Admin(app, name='site_recommendations', template_mode='bootstrap3')
-admin.add_view(CustomersModelView(Customers, session, 'Customers'))
-admin.add_view(EmployeesModelView(Employees, session, 'Employees'))
-admin.add_view(OrdersModelView(Orders, session, 'Orders'))
-admin.add_view(ProductsModelView(Products, session, 'Products'))
-admin.add_view(ModelView(Privileges, session, 'Privileges'))
-admin.add_view(PurchaseOrdersModelView(PurchaseOrders, session, 'PurchaseOrders'))
+admin = Admin(app, name='Web Office', template_mode='bootstrap3')
+admin.add_view(CustomersModelView(Customers, session, 'Clientes'))
+admin.add_view(EmployeesModelView(Employees, session, 'Empleados'))
+admin.add_view(OrdersModelView(Orders, session, 'Ordenes'))
+admin.add_view(ProductsModelView(Products, session, 'Productos'))
+admin.add_view(ModelView(Privileges, session, 'Provilegios'))
+admin.add_view(PurchaseOrdersModelView(PurchaseOrders, session, 'Ordenes Realizadas'))
